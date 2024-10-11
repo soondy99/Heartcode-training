@@ -121,20 +121,13 @@ export default function AboutMe() {
                     >
                         <p className="text-neutral-600 dark:text-neutral-400 text-base md:text-2xl font-sans max-w-3xl mx-auto">
                             <span className="font-bold text-neutral-700 dark:text-neutral-200">
-                                Hello! I am Soon
+                                {/* Hello! */}
                             </span>{" "}
-                            An avid runner with a passion for coding and computing.
-                            Whether hitting the trails or tackling a new programming project, they love staying active and engaged with technology.
-                            Always eager to learn and explore new challenges!
-                            Fun Fact: This was jointly generated with ChatGPT.
-                        </p>
-                        <Image
-                            src={sunset}
-                            alt="Macbook mockup from Aceternity UI"
-                            height="500"
-                            width="500"
-                            className="md:w-1/2 md:h-1/2 h-full w-full mx-auto object-contain"
-                        />
+
+                            An avid runner, they find joy in the great outdoors, relishing the thrill of hitting the trails and exploring new landscapes. Each run is an adventure, a chance to connect with nature while pushing personal limits. Whether navigating serene forest paths or challenging mountain terrains, the experience invigorates both body and spirit.
+
+                            </p>
+                        
                     </div>
                 );
             })}
@@ -142,6 +135,59 @@ export default function AboutMe() {
         </>
     );
 };
+
+const DummyContent1 = () => {
+    return (
+        <>
+            {[...new Array(1).fill(1)].map((_, index) => {
+                return (
+                    <div
+                        key={"dummy-content" + index}
+                        className="bg-[#F5F5F7] dark:bg-neutral-800 p-8 md:p-14 rounded-3xl mb-4"
+                    >
+                        <p className="text-neutral-600 dark:text-neutral-400 text-base md:text-2xl font-sans max-w-3xl mx-auto">
+                            <span className="font-bold text-neutral-700 dark:text-neutral-200">
+                                {/* Hello! */}
+                            </span>{" "}
+
+                            Beyond running, their passion for adventure extends to coding and computing. They love tackling new projects that challenge their creativity and problem-solving skills. For them, programming is an exploration in its own right, where every line of code opens up new possibilities and learning opportunities.
+
+                            When it’s time to unwind, they know how to relax and recharge. Whether lounging with a good book, enjoying a quiet day at home, or taking in the beauty of nature, they find balance in both activity and tranquility. This blend of adventure and relaxation fuels their drive to embrace life fully, ready for whatever comes next.
+                        </p>
+                        
+                    </div>
+                );
+            })}
+
+        </>
+    );
+};
+
+const DummyContent2 = () => {
+    return (
+        <>
+            {[...new Array(1).fill(1)].map((_, index) => {
+                return (
+                    <div
+                        key={"dummy-content" + index}
+                        className="bg-[#F5F5F7] dark:bg-neutral-800 p-8 md:p-14 rounded-3xl mb-4"
+                    >
+                        <p className="text-neutral-600 dark:text-neutral-400 text-base md:text-2xl font-sans max-w-3xl mx-auto">
+                            <span className="font-bold text-neutral-700 dark:text-neutral-200">
+                                {/* Hello! */}
+                            </span>{" "}
+
+                            When it’s time to unwind, they know how to relax and recharge. Whether lounging with a good book, enjoying a quiet day at home, or taking in the beauty of nature, they find balance in both activity and tranquility. This blend of adventure and relaxation fuels their drive to embrace life fully, ready for whatever comes next.
+                        </p>
+                        
+                    </div>
+                );
+            })}
+
+        </>
+    );
+};
+
 
 const data = [
     {
@@ -154,13 +200,13 @@ const data = [
 
         title: "Adventure",
         src: "/mountain.jpeg",
-        content: <DummyContent />,
+        content: <DummyContent1 />,
     },
     {
 
         title: "Relax",
-        src: "/beach.jpeg",
-        content: <DummyContent />,
+        src: "/beach1.jpeg",
+        content: <DummyContent2 />,
     },
 ]; 
 
