@@ -191,19 +191,19 @@ const DummyContent2 = () => {
 
 const data = [
     {
-
+        category: "",
         title: "Outdoor",
         src: "/Sunset.jpeg",
         content: <DummyContent />,
     },
     {
-
+        category: "",
         title: "Adventure",
         src: "/mountain.jpeg",
         content: <DummyContent1 />,
     },
     {
-
+        category: "",
         title: "Relax",
         src: "/beach1.jpeg",
         content: <DummyContent2 />,
